@@ -1,0 +1,27 @@
+# == Schema Information
+# Schema version: 20110414105241
+#
+# Table name: readings
+#
+#  id         :integer         not null, primary key
+#  device_id  :integer
+#  voltage    :float
+#  current    :float
+#  timestamp  :datetime
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  device_id: 1
+  voltage: 
+  current: 
+  timestamp: 2011-04-14 16:22:41
+
+two:
+  device_id: 1
+  voltage: 
+  current: 
+  timestamp: 2011-04-14 16:22:41
