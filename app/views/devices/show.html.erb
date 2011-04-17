@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @device.name %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @device.priority %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%= @device.group_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @device.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>

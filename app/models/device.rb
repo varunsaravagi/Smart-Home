@@ -1,20 +1,10 @@
-# == Schema Information
-# Schema version: 20110414104831
-#
-# Table name: devices
-#
-#  id         :integer         not null, primary key
-#  name       :string(255)
-#  priority   :integer
-#  group_id   :integer
-#  status     :integer
-#  created_at :datetime
-#  updated_at :datetime
-#
-
 class Device < ActiveRecord::Base
-  
   has_many :readings
   belongs_to :groups
-
+  
+  validates :name, :presence => true
+  validates :group_id, :presence => true
+  
+  PRIORITY = ['1','2','3','4','5']
+  STATUS = [['Active',1],['Non-Active',0]]
 end

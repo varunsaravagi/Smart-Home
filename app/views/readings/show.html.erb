@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Device:</b>
+  <%= @reading.device_id %>
+</p>
+
+<p>
+  <b>Voltage:</b>
+  <%= @reading.voltage %>
+</p>
+
+<p>
+  <b>Current:</b>
+  <%= @reading.current %>
+</p>
+
+<p>
+  <b>Timestamp:</b>
+  <%= @reading.timestamp %>
+</p>
+
+
+<%= link_to 'Edit', edit_reading_path(@reading) %> |
+<%= link_to 'Back', readings_path %>

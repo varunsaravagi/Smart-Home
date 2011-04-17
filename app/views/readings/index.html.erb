@@ -1,0 +1,29 @@
+<h1>Listing readings</h1>
+
+<table>
+  <tr>
+    <th>Device</th>
+    <th>Voltage</th>
+    <th>Current</th>
+    <th>Timestamp</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @readings.each do |reading| %>
+  <tr>
+    <td><%= reading.device_id %></td>
+    <td><%= reading.voltage %></td>
+    <td><%= reading.current %></td>
+    <td><%= reading.timestamp %></td>
+    <td><%= link_to 'Show', reading %></td>
+    <td><%= link_to 'Edit', edit_reading_path(reading) %></td>
+    <td><%= link_to 'Destroy', reading, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reading', new_reading_path %>

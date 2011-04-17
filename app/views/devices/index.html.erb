@@ -1,0 +1,30 @@
+
+<h2>Listing devices</h2>
+<br/><br/>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Priority</th>
+    <th>Group</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @devices.each do |device| %>
+  <tr>
+    <td><%= device.id %></td>
+    <td><%= device.name %></td>
+    <td><%= device.priority %></td>
+    <td><%= device.group_id %></td>
+    <td><%= device.status %></td>
+    <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    <td><%= link_to 'Destroy', device, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Device', new_device_path %>
