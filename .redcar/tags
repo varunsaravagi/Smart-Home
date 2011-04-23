@@ -1,10 +1,14 @@
-1302961600
+1303070895
 AddNameToGroup	/home/saravagi/Capstone/smarthome/db/migrate/20110416120354_add_name_to_group.rb	class AddNameToGroup 
 Application	/home/saravagi/Capstone/smarthome/config/application.rb	  class Application 
 ApplicationController	/home/saravagi/Capstone/smarthome/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/home/saravagi/Capstone/smarthome/app/helpers/application_helper.rb	module ApplicationHelper
 Article	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_legacy_helper/test/test_prototype_helper.rb	class Article
 Author	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_legacy_helper/test/test_prototype_helper.rb	class Author
+BasicExampleController	/home/saravagi/Capstone/smarthome/app/controllers/basic_example_controller.rb	class BasicExampleController 
+BasicExampleHelper	/home/saravagi/Capstone/smarthome/app/helpers/basic_example_helper.rb	module BasicExampleHelper 
+BasicexampleControllerTest	/home/saravagi/Capstone/smarthome/test/functional/basicexample_controller_test.rb	class BasicexampleControllerTest 
+BasicexampleHelperTest	/home/saravagi/Capstone/smarthome/test/unit/helpers/basicexample_helper_test.rb	class BasicexampleHelperTest 
 BrowsingTest	/home/saravagi/Capstone/smarthome/test/performance/browsing_test.rb	class BrowsingTest 
 Bunny	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_legacy_helper/test/test_prototype_helper.rb	class Bunny 
 CreateDevices	/home/saravagi/Capstone/smarthome/db/migrate/20110416100306_create_devices.rb	class CreateDevices 
@@ -22,6 +26,7 @@ GroupsController	/home/saravagi/Capstone/smarthome/app/controllers/groups_contro
 GroupsControllerTest	/home/saravagi/Capstone/smarthome/test/functional/groups_controller_test.rb	class GroupsControllerTest 
 GroupsHelper	/home/saravagi/Capstone/smarthome/app/helpers/groups_helper.rb	module GroupsHelper
 GroupsHelperTest	/home/saravagi/Capstone/smarthome/test/unit/helpers/groups_helper_test.rb	class GroupsHelperTest 
+ModifyStatusType	/home/saravagi/Capstone/smarthome/db/migrate/20110417180408_modify_status_type.rb	class ModifyStatusType 
 Nested	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_legacy_helper/test/test_prototype_helper.rb	class Author::Nested 
 PRIORITY	/home/saravagi/Capstone/smarthome/app/models/device.rb	  PRIORITY =
 PRIORITY	/home/saravagi/Capstone/smarthome/app/models/group.rb	  PRIORITY =
@@ -51,6 +56,7 @@ author_articles_path	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_
 author_id	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_legacy_helper/test/test_prototype_helper.rb	  attr_reader :author_id
 author_path	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_legacy_helper/test/test_prototype_helper.rb	    def author_path(record)
 authors_path	/home/saravagi/Capstone/smarthome/vendor/plugins/prototype_legacy_helper/test/test_prototype_helper.rb	    def authors_path
+basic_chart	/home/saravagi/Capstone/smarthome/app/controllers/basic_example_controller.rb	  def basic_chart
 bind	/home/saravagi/Capstone/smarthome/public/javascripts/prototype.js	function bind(context)
 bindAsEventListener	/home/saravagi/Capstone/smarthome/public/javascripts/prototype.js	function bindAsEventListener(context)
 blank	/home/saravagi/Capstone/smarthome/public/javascripts/prototype.js	function blank()
@@ -93,6 +99,7 @@ down	/home/saravagi/Capstone/smarthome/db/migrate/20110416100200_create_groups.r
 down	/home/saravagi/Capstone/smarthome/db/migrate/20110416100306_create_devices.rb	  def self.down
 down	/home/saravagi/Capstone/smarthome/db/migrate/20110416100621_create_readings.rb	  def self.down
 down	/home/saravagi/Capstone/smarthome/db/migrate/20110416120354_add_name_to_group.rb	  def self.down
+down	/home/saravagi/Capstone/smarthome/db/migrate/20110417180408_modify_status_type.rb	  def self.down
 each	/home/saravagi/Capstone/smarthome/public/javascripts/prototype.js	function each(iterator)
 each	/home/saravagi/Capstone/smarthome/public/javascripts/prototype.js	function each(iterator, context)
 eachSlice	/home/saravagi/Capstone/smarthome/public/javascripts/prototype.js	function eachSlice(number, iterator, context)
@@ -298,6 +305,7 @@ up	/home/saravagi/Capstone/smarthome/db/migrate/20110416100200_create_groups.rb	
 up	/home/saravagi/Capstone/smarthome/db/migrate/20110416100306_create_devices.rb	  def self.up
 up	/home/saravagi/Capstone/smarthome/db/migrate/20110416100621_create_readings.rb	  def self.up
 up	/home/saravagi/Capstone/smarthome/db/migrate/20110416120354_add_name_to_group.rb	  def self.up
+up	/home/saravagi/Capstone/smarthome/db/migrate/20110417180408_modify_status_type.rb	  def self.up
 update	/home/saravagi/Capstone/smarthome/app/controllers/devices_controller.rb	  def update
 update	/home/saravagi/Capstone/smarthome/app/controllers/groups_controller.rb	  def update
 update	/home/saravagi/Capstone/smarthome/app/controllers/readings_controller.rb	  def update

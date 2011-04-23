@@ -6,5 +6,5 @@ class Device < ActiveRecord::Base
   validates :group_id, :presence => true
   
   PRIORITY = ['1','2','3','4','5']
-  STATUS = [['Active',1],['Non-Active',0]]
+  STATUS = [['Active','Active'],['Non-Active','Non-Active']]
 end

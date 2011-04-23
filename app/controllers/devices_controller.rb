@@ -5,8 +5,10 @@ class DevicesController < ApplicationController
     
     if (params[:group_id])
       @devices = Device.find(:all,:conditions => ["group_id = ?",params[:group_id]])
+      @flag = 1
     else
       @devices = Device.all
+      @flag = 0
     end
     respond_to do |format|
       format.html # index.html.erb
